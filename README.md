@@ -1,866 +1,137 @@
-# 🖥️ Enterprise IT Support & Systems Operations Portfolio
+# 🖥️ Enterprise IT Support, Systems Administration & Operations Portfolio
 
-> **Production-inspired enterprise IT portfolio demonstrating hands-on skills across Help Desk Support, Active Directory, Systems Administration, Microsoft 365, IT Operations, infrastructure troubleshooting, automation, monitoring, backup, and disaster recovery.**
+### 👨‍💻 Jamie Christian | Technical Portfolio
 
-This repository contains interconnected technical labs designed to simulate the responsibilities, workflows, documentation standards, and troubleshooting processes found in modern enterprise IT environments.
+**🎯 IT Support • ☁️ Cloud Support • 🔐 Identity Management • 🛠️ Systems Administration • 📊 IT Operations • 🤖 Automation**
 
-The portfolio demonstrates progression from **frontline technical support → identity administration → IT operations → systems administration → infrastructure and cloud operations**.
+![Portfolio](https://img.shields.io/badge/Portfolio-Enterprise_IT-0A66C2?style=for-the-badge)
+![Projects](https://img.shields.io/badge/Projects-6-22C55E?style=for-the-badge)
+![Focus](https://img.shields.io/badge/Focus-Hands--On_Labs-7C3AED?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
----
+### 🧰 Technology Stack
 
-## 📌 Portfolio Overview
-
-The projects in this repository focus on practical enterprise IT responsibilities rather than isolated tutorials.
-
-### Core Technical Areas
-
-- 🎧 Help Desk & Technical Support
-- 👤 Active Directory Administration
-- 🔐 Identity & Access Management
-- ⚙️ Windows Server Administration
-- 🐧 Linux Administration
-- 📧 Microsoft 365 & Outlook Support
-- 🌐 Network Troubleshooting
-- 📊 Infrastructure Monitoring
-- 🚨 Incident Management
-- 🔍 Root Cause Analysis
-- 🤖 PowerShell, Bash & Python Automation
-- 🏗️ Configuration Management
-- 💾 Backup & Recovery
-- 🚑 Disaster Recovery
-- 📚 Knowledge Base Development
-- 📋 SOPs, Runbooks & Operational Documentation
-- 🖥️ Virtualization
-
-> **Lab Disclaimer:** All organizations, employees, users, tickets, incidents, infrastructure, IP addresses, and business scenarios represented in this repository are fictional and were created for technical training and portfolio demonstration.
+![Microsoft 365](https://img.shields.io/badge/Microsoft_365-D83B01?style=flat-square&logo=microsoft365&logoColor=white)
+![Microsoft Entra ID](https://img.shields.io/badge/Microsoft_Entra_ID-0078D4?style=flat-square&logo=microsoft&logoColor=white)
+![Windows Server](https://img.shields.io/badge/Windows_Server-0078D4?style=flat-square&logo=windows&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Azure](https://img.shields.io/badge/Microsoft_Azure-0078D4?style=flat-square&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
 
 ---
 
-# 🚀 Enterprise Labs
+## 🚀 Executive Summary
 
-## 01 — 👤 Enterprise Active Directory User Management Lab
+Welcome to my **Enterprise IT Support, Systems Administration & Operations Portfolio**.
 
-**Focus:** Enterprise identity lifecycle, access administration, security groups, permissions, and Group Policy.
+This repository contains **six enterprise-focused technical projects** covering:
 
-### Skills Demonstrated
+- 🎧 **IT Support & Help Desk** — Troubleshooting, ticket resolution, escalation, and user communication.
+- 🔐 **Identity & Access Management** — Active Directory, Microsoft Entra ID, security groups, and permissions.
+- 📧 **Microsoft 365 Administration** — Outlook, authentication, licensing, Microsoft Graph, and diagnostics.
+- 🖥️ **Systems Administration** — Windows Server, Linux, patching, and infrastructure management.
+- 📊 **IT Operations** — Monitoring, incident response, root cause analysis, and service reliability.
+- 🤖 **Automation & Scripting** — PowerShell, Bash, Python, and repeatable administrative workflows.
 
-- Active Directory Users and Computers
-- User provisioning
-- Employee onboarding and offboarding
-- Organizational Unit management
-- Security groups and group membership
-- Password resets and account unlocks
-- Account lifecycle administration
-- NTFS and shared-folder permissions
-- Group Policy Objects
-- Computer objects
-- PowerShell administration
-- Access validation
-- Administrative auditing
-- Identity documentation
+### 🔄 My Technical Approach
 
-### Identity Lifecycle
+**🔎 Investigate → 🧠 Diagnose → 🛠️ Troubleshoot → ✅ Validate → 📝 Document → 📈 Improve**
 
-```text
-Access Request
-      │
-      ▼
-Validate Request
-      │
-      ▼
-Create / Modify Identity
-      │
-      ▼
-Assign Security Groups
-      │
-      ▼
-Apply Resource Permissions
-      │
-      ▼
-Apply Organizational Policy
-      │
-      ▼
-Validate Access
-      │
-      ▼
-Document & Audit
-```
-
-### Enterprise Scenarios
-
-- New employee provisioning
-- Department-based access
-- Security-group assignment
-- Password resets
-- Locked-account recovery
-- Shared-folder access
-- Permission changes
-- Group Policy administration
-- Employee offboarding
-- PowerShell-assisted administration
-
-📂 **Explore the Lab:**  
-[`enterprise-active-directory-user-management-lab/`](./enterprise-active-directory-user-management-lab/)
+> **📌 Portfolio Transparency:** Most organizational scenarios, support tickets, and operational records are simulated for training. The Microsoft 365 and Entra ID investigation also includes actual read-only observations from a personal practice tenant, clearly separated from fictional incidents and unverified outcomes.
 
 ---
 
-## 02 — 🎧 Enterprise Help Desk Support Lab
+## 🗂️ Project Navigation
 
-**Focus:** Tier 1 / Tier 2 enterprise technical support and service desk operations.
-
-### Skills Demonstrated
-
-- Ticket lifecycle management
-- Incident classification
-- Priority assignment
-- SLA awareness
-- User communication
-- Windows troubleshooting
-- Microsoft 365 troubleshooting
-- Outlook troubleshooting
-- Password and account support
-- Printer troubleshooting
-- VPN troubleshooting
-- Network diagnostics
-- Escalation procedures
-- Knowledge Base development
-- Resolution documentation
-
-### Support Workflow
-
-```text
-User Reports Issue
-        │
-        ▼
-Create Ticket
-        │
-        ▼
-Gather Information
-        │
-        ▼
-Classify & Prioritize
-        │
-        ▼
-Initial Troubleshooting
-        │
-   ┌────┴────┐
-   ▼         ▼
-Resolved  Unresolved
-   │         │
-   ▼         ▼
-Validate  Escalate
-   │         │
-   └────┬────┘
-        ▼
-  Documentation
-        │
-        ▼
-     Closure
-```
-
-📂 **Explore the Lab:**  
-[`enterprise-helpdesk-support-lab/`](./enterprise-helpdesk-support-lab/)
+| # | Project | Primary Focus |
+|---|---|---|
+| 01 | [🔐 Microsoft 365 & Entra ID Incident Investigation](./microsoft-365-entra-id-incident-investigation/) | Identity, licensing, sign-in logs, Microsoft Graph |
+| 02 | [👥 Enterprise Active Directory User Management](./enterprise-active-directory-user-management-lab/) | User lifecycle, GPO, permissions, PowerShell |
+| 03 | [🎧 Enterprise Help Desk Support](./enterprise-helpdesk-support-lab/) | Tickets, troubleshooting, escalation, knowledge base |
+| 04 | [📊 Enterprise IT Operations](./enterprise-it-operations-lab/) | Monitoring, incidents, RCA, service reliability |
+| 05 | [📧 Enterprise Microsoft 365 & Outlook Support](./enterprise-microsoft-365-outlook-support-lab/) | Outlook diagnostics, support tickets, incident evidence |
+| 06 | [⚙️ Enterprise Systems Administration](./enterprise-systems-administration-lab/) | Windows, Linux, patching, automation, recovery |
 
 ---
 
-## 03 — 📊 Enterprise IT Operations Lab
+## 🏆 Portfolio Highlights
 
-**Focus:** Infrastructure operations, monitoring, incident response, operational procedures, and service reliability.
+![Identity Management](https://img.shields.io/badge/Identity-AD_%26_Entra_ID-blue?style=flat-square)
+![IT Support](https://img.shields.io/badge/Support-Tier_1_%2F_Tier_2-green?style=flat-square)
+![Automation](https://img.shields.io/badge/Automation-PowerShell-blueviolet?style=flat-square)
+![Operations](https://img.shields.io/badge/Operations-Incident_Management-orange?style=flat-square)
+![Documentation](https://img.shields.io/badge/Documentation-Runbooks_%26_SOPs-teal?style=flat-square)
+![Security](https://img.shields.io/badge/Security-Least_Privilege-red?style=flat-square)
 
-### Skills Demonstrated
+### 💼 Career Alignment
 
-- Infrastructure monitoring
-- System health validation
-- Incident detection
-- Incident triage
-- Incident response
-- Root cause analysis
-- Service validation
-- Asset inventory
-- Operational dashboards
-- Preventive maintenance
-- Backup verification
-- Operational checklists
-- Runbook execution
-- Incident documentation
-- Escalation workflows
-- Post-incident analysis
+🎧 **IT Support:** Help Desk Technician · Service Desk Analyst · Technical Support Analyst · Application Support Analyst
 
-### IT Operations Lifecycle
+🔐 **Microsoft 365 & Identity:** Junior M365 Administrator · Identity Support Analyst · IT Analyst
 
-```text
-Monitoring
-    │
-    ▼
-Detection
-    │
-    ▼
-Validation
-    │
-    ▼
-Triage
-    │
-    ▼
-Investigation
-    │
-    ▼
-Mitigation
-    │
-    ▼
-Recovery
-    │
-    ▼
-Root Cause Analysis
-    │
-    ▼
-Documentation
-    │
-    ▼
-Preventive Improvement
-```
+🖥️ **Systems & Infrastructure:** Junior Systems Administrator · Infrastructure Support Analyst · Systems Administrator I
 
-### Operational Artifacts
-
-- Dashboards
-- Datasets
-- Incident records
-- Asset inventories
-- Operational documentation
-- Architecture diagrams
-- Checklists
-- Procedures
-- Runbooks
-- Root cause analyses
-
-📂 **Explore the Lab:**  
-[`enterprise-it-operations-lab/`](./enterprise-it-operations-lab/)
+☁️ **Cloud & Operations:** Cloud Support Associate · Cloud Support Analyst · Technical Operations Analyst · IT Operations Analyst
 
 ---
 
-## 04 — 📧 Enterprise Microsoft 365 & Outlook Support Lab
+## 🔍 Featured Investigation
 
-**Focus:** Microsoft 365 administration and enterprise messaging support.
+### 🔐 Microsoft 365 & Entra ID — Identity and Access Incident Investigation
 
-### Skills Demonstrated
+![Investigation](https://img.shields.io/badge/Case_Study-Documented-2563EB?style=flat-square)
+![PowerShell](https://img.shields.io/badge/PowerShell-7.5.4-5391FE?style=flat-square)
+![Graph SDK](https://img.shields.io/badge/Microsoft_Graph-2.41.2-0078D4?style=flat-square)
+![Access](https://img.shields.io/badge/Access-Read_Only-16A34A?style=flat-square)
 
-- Microsoft 365 administration
-- Outlook Desktop
-- Outlook Web
-- Exchange Online concepts
-- User mailbox troubleshooting
-- Shared mailbox support
-- Distribution groups
-- Mailbox permissions
-- License administration
-- Authentication troubleshooting
-- Outlook profile troubleshooting
-- Mail-flow troubleshooting
-- User communication
-- Ticket resolution
-- Knowledge Base documentation
+**📅 Date:** October 20, 2026
 
-### Troubleshooting Workflow
+**🎯 Objective:** Investigate a simulated Microsoft 365 access issue using authorized read-only identity, authentication, licensing, and API diagnostics.
 
-```text
-Issue Reported
-      │
-      ▼
-User Validation
-      │
-      ▼
-Service Validation
-      │
-      ▼
-Authentication
-      │
-      ▼
-Licensing
-      │
-      ▼
-Mailbox
-      │
-      ▼
-Client Troubleshooting
-      │
-      ▼
-Resolution
-      │
-      ▼
-Documentation
-```
+**🔎 Verified observations:**
 
-📂 **Explore the Lab:**  
-[`enterprise-microsoft-365-outlook-support-lab/`](./enterprise-microsoft-365-outlook-support-lab/)
+- ✅ Account enabled.
+- ✅ Successful Azure Portal interactive sign-in.
+- ✅ Administrative role identified.
+- ✅ Microsoft 365 license assignments reviewed.
+- ✅ Microsoft Graph PowerShell SDK installed.
+- ✅ Authenticated Microsoft Graph REST `/me` request succeeded.
+- ⚠️ Unexpected SDK context behavior documented.
+- 📋 Further workload-specific investigation and validation required.
+
+**Important:** The investigation did not demonstrate a real employee outage or completed service restoration.
+
+📂 [**Explore the Complete Case Study**](./microsoft-365-entra-id-incident-investigation/)
 
 ---
 
-## 05 — ⚙️ Enterprise Systems Administration Lab
+## 📚 Documentation & Evidence
 
-**Focus:** Windows Server, Linux, virtualization, configuration management, backup, recovery, and infrastructure administration.
-
-### Skills Demonstrated
-
-- Windows Server administration
-- Linux administration
-- PowerShell
-- Bash
-- Server configuration
-- Service management
-- File-system administration
-- Storage administration
-- System monitoring
-- Patch management
-- Performance troubleshooting
-- Event and log analysis
-- Backup administration
-- Restore procedures
-- Disaster recovery
-- Virtualization
-- Configuration management
-- Ansible
-- PowerShell DSC
-- Administrative documentation
-
-### Systems Administration Lifecycle
-
-```text
-Provision
-    │
-    ▼
-Configure
-    │
-    ▼
-Secure
-    │
-    ▼
-Validate
-    │
-    ▼
-Monitor
-    │
-    ▼
-Maintain
-    │
-    ▼
-Patch
-    │
-    ▼
-Backup
-    │
-    ▼
-Recover
-    │
-    ▼
-Document
-```
-
-📂 **Explore the Lab:**  
-[`enterprise-systems-administration-lab/`](./enterprise-systems-administration-lab/)
-
----
-
-# 🏗️ Repository Architecture
-
-```text
-enterprise-it-support-and-systems-operations/
-│
-├── enterprise-active-directory-user-management-lab/
-│   └── Active Directory, identity lifecycle, GPO & permissions
-│
-├── enterprise-helpdesk-support-lab/
-│   └── Tickets, troubleshooting, SLA, escalation & KB
-│
-├── enterprise-it-operations-lab/
-│   └── Monitoring, incidents, RCA, inventory & operations
-│
-├── enterprise-microsoft-365-outlook-support-lab/
-│   └── Microsoft 365, Exchange concepts & Outlook support
-│
-├── enterprise-systems-administration-lab/
-│   └── Windows, Linux, automation, backup, DR & virtualization
-│
-├── LICENSE
-│
-└── README.md
-```
-
----
-
-# 🧰 Technical Skills Matrix
-
-| Domain | Technologies / Skills |
+| Artifact | Purpose |
 |---|---|
-| **Help Desk** | Ticket management, troubleshooting, SLA, escalation |
-| **Windows** | Windows 11, Windows Server, Event Viewer, PowerShell |
-| **Linux** | Linux administration, Bash, services, logs, permissions |
-| **Identity** | Active Directory, users, groups, OUs, RBAC concepts |
-| **Microsoft 365** | Microsoft 365, Outlook, mailbox administration |
-| **Networking** | TCP/IP, DNS, DHCP, VPN, connectivity diagnostics |
-| **Security** | Least privilege, access control, auditing, permissions |
-| **Automation** | PowerShell, Bash, Python |
-| **Configuration** | Ansible, PowerShell DSC |
-| **Virtualization** | VirtualBox, VMware concepts |
-| **Monitoring** | Event logs, performance monitoring, dashboards |
-| **Incident Management** | Detection, triage, mitigation, recovery, RCA |
-| **Resilience** | Backup, restore, recovery, disaster recovery |
-| **Documentation** | SOPs, KB articles, runbooks, incident reports |
-| **Operations** | Checklists, inventory, health checks, maintenance |
+| 🎫 Incident Tickets | Document reported problems, investigation, and outcomes |
+| 📸 Screenshot Evidence | Support bounded technical observations |
+| 🧪 Test Plans | Define validation steps and acceptance criteria |
+| 📜 PowerShell Scripts | Support diagnostics and administrative automation |
+| 📘 Runbooks | Provide repeatable troubleshooting procedures |
+| 🔐 Security Reviews | Document access controls and risk considerations |
+| 📊 Operational Reports | Capture monitoring, incidents, and improvements |
+| 🏗️ Architecture Diagrams | Explain systems, components, and technical workflows |
 
 ---
 
-# 🔧 Troubleshooting Methodology
+## 👨‍💻 Author
 
-A structured troubleshooting methodology is used throughout the portfolio.
+**Jamie Christian**
 
-### 1. Identify the Problem
+🎯 Enterprise IT Support | Microsoft 365 | Systems Administration | Cloud Support | Technical Operations
 
-- Gather symptoms
-- Determine scope
-- Identify affected users and systems
-- Review recent changes
-
-### 2. Establish a Theory
-
-- Identify likely causes
-- Prioritize hypotheses
-- Determine required diagnostics
-
-### 3. Test the Theory
-
-- Collect evidence
-- Review logs
-- Run diagnostics
-- Reproduce the issue when appropriate
-- Confirm or reject the suspected cause
-
-### 4. Implement Resolution
-
-- Apply controlled remediation
-- Follow change procedures
-- Minimize user and business impact
-
-### 5. Verify Functionality
-
-- Test affected services
-- Confirm expected functionality
-- Validate resolution with the user when applicable
-
-### 6. Document
-
-- Record troubleshooting actions
-- Document root cause
-- Record resolution
-- Capture validation evidence
-- Identify preventive actions
-
-> **Objective:** Demonstrate evidence-based troubleshooting rather than trial-and-error remediation.
+[![GitHub Profile](https://img.shields.io/badge/GitHub-JamieChristian22-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JamieChristian22)
 
 ---
 
-# 🚨 Incident Management
+**📜 License:** [MIT](./LICENSE)
 
-The Help Desk and IT Operations labs follow a structured incident-management lifecycle:
-
-```text
-Detect
-  ↓
-Log
-  ↓
-Classify
-  ↓
-Prioritize
-  ↓
-Diagnose
-  ↓
-Resolve / Escalate
-  ↓
-Recover
-  ↓
-Validate
-  ↓
-Close
-  ↓
-Knowledge Capture / RCA
-```
-
-### Incident Priority Model
-
-| Priority | Example | Operational Response |
-|---|---|---|
-| **P1 — Critical** | Business-critical service unavailable | Immediate response |
-| **P2 — High** | Major service degradation | High-priority response |
-| **P3 — Medium** | Limited user or business impact | Standard response |
-| **P4 — Low** | Minor issue or service request | Scheduled response |
-
----
-
-# 🤖 Automation
-
-Automation is used to reduce repetitive administrative work while maintaining validation, logging, and human oversight.
-
-### Automation Areas
-
-- User provisioning
-- Account administration
-- Password operations
-- Group membership
-- System health checks
-- Service validation
-- Log collection
-- Administrative reporting
-- Configuration management
-- Routine maintenance
-
-### Automation Lifecycle
-
-```text
-Identify
-   ↓
-Define
-   ↓
-Validate
-   ↓
-Automate
-   ↓
-Execute
-   ↓
-Verify
-   ↓
-Log
-   ↓
-Document
-```
-
----
-
-# 🔐 Security & Access Management
-
-Security principles are integrated throughout the portfolio.
-
-### Core Practices
-
-- Least-privilege access
-- Role-based access concepts
-- Security-group-based permissions
-- Controlled administrative access
-- Account lifecycle management
-- Password policies
-- Authentication troubleshooting
-- Access validation
-- NTFS permissions
-- Administrative auditing
-- Secure offboarding
-
-### Access Model
-
-```text
-User
-  ↓
-Identity
-  ↓
-Security Group
-  ↓
-Role / Permission
-  ↓
-Resource
-  ↓
-Audit
-```
-
----
-
-# 💾 Backup, Recovery & Disaster Recovery
-
-The portfolio demonstrates operational resilience through:
-
-- Backup procedures
-- Backup validation
-- Restore testing
-- Recovery procedures
-- Disaster recovery documentation
-- Recovery checklists
-- System validation
-- Recovery evidence
-- Post-recovery documentation
-
-### Recovery Lifecycle
-
-```text
-Backup
-  ↓
-Verify
-  ↓
-Monitor
-  ↓
-Incident
-  ↓
-Assess
-  ↓
-Recover
-  ↓
-Validate
-  ↓
-Document
-```
-
----
-
-# 📚 Documentation & Knowledge Management
-
-Enterprise IT requires technical work to be repeatable and transferable.
-
-The portfolio includes:
-
-- 📘 Standard Operating Procedures
-- 📗 Knowledge Base Articles
-- 📙 Troubleshooting Guides
-- 📕 Incident Reports
-- 📓 Root Cause Analyses
-- 📒 Runbooks
-- 📋 Operational Checklists
-- 🗂️ Asset Inventories
-- 📊 Operational Reports
-- 🏗️ Architecture Documentation
-- 🚑 Disaster Recovery Procedures
-
-Professional documentation is designed to answer:
-
-1. **What happened?**
-2. **Why did it happen?**
-3. **What evidence supports the diagnosis?**
-4. **How was it resolved?**
-5. **How was the resolution validated?**
-6. **How can recurrence be prevented?**
-
----
-
-# 🛡️ Operational Principles
-
-### Least Privilege
-
-Users and administrators receive only the permissions necessary to perform authorized responsibilities.
-
-### Repeatability
-
-Routine administrative procedures are standardized through documentation and automation.
-
-### Auditability
-
-Administrative activity and significant system changes should be traceable.
-
-### Recoverability
-
-Critical systems should have documented and validated recovery procedures.
-
-### Documentation
-
-Resolved incidents and repeatable procedures should contribute to organizational knowledge.
-
-### Escalation
-
-Issues outside the support boundary should be escalated with complete troubleshooting evidence.
-
-### Validation
-
-A technical change is not complete until functionality has been verified.
-
-### Continuous Improvement
-
-Operational incidents should produce lessons that improve future reliability and support procedures.
-
----
-
-# 📈 Technical Progression
-
-```text
-HELP DESK SUPPORT
-        │
-        ▼
-IDENTITY ADMINISTRATION
-        │
-        ▼
-IT OPERATIONS
-        │
-        ▼
-SYSTEMS ADMINISTRATION
-        │
-        ▼
-CLOUD / INFRASTRUCTURE
-```
-
-This progression demonstrates development from frontline technical support toward systems, infrastructure, and cloud operations.
-
----
-
-# 🎯 Target Roles
-
-### IT Support
-
-- Help Desk Technician
-- Service Desk Analyst
-- IT Support Specialist
-- Desktop Support Technician
-- Technical Support Specialist
-- IT Support Engineer I
-
-### Systems & Infrastructure
-
-- Junior Systems Administrator
-- Systems Administrator I
-- Infrastructure Support Engineer
-- Infrastructure Support Technician
-- Junior Infrastructure Engineer
-- Infrastructure Operations Analyst
-
-### Cloud & Operations
-
-- Cloud Support Associate
-- Cloud Support Technician
-- Cloud Operations Analyst
-- Cloud Operations Engineer I
-- Junior Cloud Engineer
-- Junior Platform Support Engineer
-
----
-
-# ⭐ Portfolio Highlights
-
-- ✅ Enterprise Active Directory administration
-- ✅ User onboarding and offboarding
-- ✅ Group Policy administration
-- ✅ Windows Server administration
-- ✅ Linux administration
-- ✅ Microsoft 365 support
-- ✅ Outlook troubleshooting
-- ✅ Enterprise ticket management
-- ✅ Incident response
-- ✅ Root cause analysis
-- ✅ Network troubleshooting
-- ✅ PowerShell automation
-- ✅ Bash administration
-- ✅ Python automation
-- ✅ Configuration management
-- ✅ Infrastructure monitoring
-- ✅ Backup and recovery
-- ✅ Disaster recovery
-- ✅ Virtualization
-- ✅ Asset inventory
-- ✅ Knowledge Base development
-- ✅ SOP development
-- ✅ Operational runbooks
-- ✅ Architecture documentation
-- ✅ Security and least-privilege concepts
-
----
-
-# 🔎 Recruiter Quick Start
-
-| Area | Portfolio Lab | Primary Evidence |
-|---|---|---|
-| 🎧 **Help Desk** | [Help Desk Lab](./enterprise-helpdesk-support-lab/) | Troubleshooting, tickets, SLA, escalation, KB |
-| 👤 **Active Directory** | [Active Directory Lab](./enterprise-active-directory-user-management-lab/) | AD, onboarding, groups, permissions, GPO, PowerShell |
-| 📊 **IT Operations** | [IT Operations Lab](./enterprise-it-operations-lab/) | Monitoring, incidents, RCA, inventory, runbooks |
-| 📧 **Microsoft 365** | [Microsoft 365 Lab](./enterprise-microsoft-365-outlook-support-lab/) | M365, Outlook, mailbox and user support |
-| ⚙️ **Systems Administration** | [Systems Administration Lab](./enterprise-systems-administration-lab/) | Windows, Linux, automation, virtualization, backup, DR |
-
----
-
-# 💼 What This Portfolio Demonstrates
-
-This repository is designed to answer a practical hiring question:
-
-> **Can the candidate approach enterprise IT work using structured troubleshooting, administration, validation, automation, and documentation?**
-
-### 🔧 Troubleshoot
-
-Systematically investigate technical issues using symptoms, logs, diagnostics, testing, and validation.
-
-### 👤 Administer
-
-Manage users, groups, permissions, policies, systems, services, and enterprise resources.
-
-### 🖥️ Operate
-
-Perform operational tasks across Windows, Linux, Microsoft 365, identity, and infrastructure environments.
-
-### 🚨 Respond
-
-Detect, triage, investigate, mitigate, resolve, and document operational incidents.
-
-### 🤖 Automate
-
-Use scripting and configuration-management technologies to improve repeatability and reduce manual administrative work.
-
-### 📊 Monitor
-
-Evaluate system health, operational status, logs, events, infrastructure conditions, and service performance.
-
-### 💾 Recover
-
-Apply documented backup, restore, and disaster-recovery procedures.
-
-### 📚 Document
-
-Create professional SOPs, runbooks, KB articles, troubleshooting guides, incident reports, and operational records.
-
----
-
-# 🧠 Portfolio Philosophy
-
-The objective of this portfolio is not simply to demonstrate that a technical command can be executed.
-
-The objective is to demonstrate the **complete operational lifecycle**:
-
-```text
-Business / User Requirement
-            │
-            ▼
-       Investigation
-            │
-            ▼
-       Technical Work
-            │
-            ▼
-        Validation
-            │
-            ▼
-      Documentation
-            │
-            ▼
-    Operational Handoff
-            │
-            ▼
-  Continuous Improvement
-```
-
-A production IT environment depends on more than technical knowledge.
-
-> **Technical Execution + Troubleshooting + Communication + Security + Documentation + Operational Discipline**
-
----
-
-# 👨‍💻 About This Repository
-
-This repository was developed as a hands-on technical environment for demonstrating practical enterprise IT support, systems administration, and infrastructure operations skills.
-
-Each lab is structured around realistic operational responsibilities rather than isolated technology demonstrations.
-
-The portfolio will continue to evolve as additional systems administration, infrastructure automation, cloud operations, monitoring, and security capabilities are developed.
-
----
-
-# 📜 License
-
-This repository is licensed under the **MIT License**.
-
-See [`LICENSE`](./LICENSE) for details.
-
----
-
-# ⚠️ Disclaimer
-
-This repository is a simulated technical lab and professional portfolio environment.
-
-All organizations, employees, users, tickets, incidents, IP addresses, hostnames, infrastructure, business scenarios, and operational records are fictional and were created solely for educational, laboratory, and professional portfolio purposes.
-
-No proprietary company information, customer information, production credentials, or real production environments are represented.
+**⚠️ Disclaimer:** This is an independent technical training portfolio. Simulated enterprise records are not representations of actual corporate employment or production incidents.
