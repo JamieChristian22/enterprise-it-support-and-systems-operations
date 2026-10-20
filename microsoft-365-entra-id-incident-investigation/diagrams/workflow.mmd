@@ -1,0 +1,12 @@
+flowchart TD
+ A[Simulated employee access report] --> B[Verify Entra account enabled]
+ B --> C[Review role and group assignments]
+ C --> D[Inspect app-specific sign-in events]
+ D --> E{Authentication error?}
+ E -->|Yes| F[Investigate error code, MFA, Conditional Access]
+ E -->|No or unknown| G[Review license and service plans]
+ F --> H[Validate affected workload]
+ G --> H
+ H --> I{User access verified?}
+ I -->|Yes| J[Document approved fix and close]
+ I -->|No| K[Escalate with evidence; keep ticket open]

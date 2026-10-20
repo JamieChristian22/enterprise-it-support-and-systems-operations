@@ -1,0 +1,186 @@
+{
+  "created_date": "2026-10-20",
+  "purpose": "Training portfolio; edited evidence only",
+  "files": [
+    {
+      "path": ".github/workflows/quality.yml",
+      "size_bytes": 1157,
+      "sha256": "f7352a0bab78dff7dc2f1bbeca133402d622fef62c91ff2d5dd04f7ca9f98b87"
+    },
+    {
+      "path": ".gitignore",
+      "size_bytes": 144,
+      "sha256": "bdcfd81677537c105e87948e0fa88e7c329662b31af18cf5870256963b9f9f8f"
+    },
+    {
+      "path": "LICENSE",
+      "size_bytes": 1073,
+      "sha256": "300ca86677cd13623f2dc5753fa558076edb362b2f54e52624d150e1792999cc"
+    },
+    {
+      "path": "PORTFOLIO_CASE_STUDY.pdf",
+      "size_bytes": 4486,
+      "sha256": "3a36ed3259251dcce82561542189c2a176095df1d2a066b9c498cfaef1bbcc01"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 8372,
+      "sha256": "2dfa4be47adefe9f84f07f989f2832fb648d378e903d28a55bdeea66970dff55"
+    },
+    {
+      "path": "SECURITY.md",
+      "size_bytes": 366,
+      "sha256": "c2ef387569fdd208b47857d7467759b76a7c1b5e58f574a9cb20c5718aec4ff8"
+    },
+    {
+      "path": "data/sample_ticket.csv",
+      "size_bytes": 200,
+      "sha256": "1fee6af443b2a6ff914c1e49f1ab70eea5d883bb11d6c43325e1b8ccef8ff24a"
+    },
+    {
+      "path": "diagrams/workflow.mmd",
+      "size_bytes": 509,
+      "sha256": "b30254fe654fa6e09ba89ae5ee8a82fab8e45a8f9fcc2ef85b545f85d575bd93"
+    },
+    {
+      "path": "docs/CHANGE_CONTROL_TEMPLATE.md",
+      "size_bytes": 1026,
+      "sha256": "61f621bcd9a15413be5f96ceca948cea5755125b33602fb0e9a2bbfb1bcd3c80"
+    },
+    {
+      "path": "docs/ESCALATION_AND_SLA.md",
+      "size_bytes": 2594,
+      "sha256": "e7154bc345a756ae282e04b50b753d234ebf89ce9595f1dc297ff38b14b087c4"
+    },
+    {
+      "path": "docs/EVIDENCE_INDEX.md",
+      "size_bytes": 1499,
+      "sha256": "690ba9129c2c14695eadb71958599865f9224f7e176a745ff73038779f29103f"
+    },
+    {
+      "path": "docs/GRAPH_CONTEXT_TROUBLESHOOTING.md",
+      "size_bytes": 2601,
+      "sha256": "119170df1318b81910105ae39e5b61c5a6dc800df06a873af18a5bbf1000a09b"
+    },
+    {
+      "path": "docs/INC-2026-1042.md",
+      "size_bytes": 4964,
+      "sha256": "76ae7d3c665ced1e0c774788658e76e059ddb977a390a20a0bc555faf03cf289"
+    },
+    {
+      "path": "docs/INTERVIEW_STORY.md",
+      "size_bytes": 2568,
+      "sha256": "a62f221dc5ba5df5057682e6be6e3ae3429724dcf155258fcf1bd746ea814904"
+    },
+    {
+      "path": "docs/PRIVACY_AND_PUBLICATION.md",
+      "size_bytes": 1826,
+      "sha256": "a9ec13d6fec249dadac3858d1eaa0115a1173ee0b9ee6ea4a7f2629b4d41332e"
+    },
+    {
+      "path": "docs/RECRUITER_GUIDE.md",
+      "size_bytes": 2214,
+      "sha256": "364c888fb4be3d15bdaba283cab3c6fdf9b095950df6341f97c82037bdb1dad2"
+    },
+    {
+      "path": "docs/ROOT_CAUSE_DECISION_TREE.md",
+      "size_bytes": 1578,
+      "sha256": "9daebf88e9f9eb5437005abc743bae0f6a4134418cbbe3938c2f14c0ebe2ecd4"
+    },
+    {
+      "path": "docs/SECURITY_AND_GOVERNANCE.md",
+      "size_bytes": 2151,
+      "sha256": "a6572c92c51f8f113c78885c2dc9b0e00c82016671def67a01b8aefc1a019c71"
+    },
+    {
+      "path": "docs/TESTING_AND_ACCEPTANCE.md",
+      "size_bytes": 1538,
+      "sha256": "2d57fb25409943e7ad8b280ade8412ba2ccee3d6a5afef5ceba66af31268042c"
+    },
+    {
+      "path": "docs/TROUBLESHOOTING_RUNBOOK.md",
+      "size_bytes": 2974,
+      "sha256": "1c4daec1d5e2f70e089bd34bd9dfaaaa96dc59328987c44e40c33f9021d0e290"
+    },
+    {
+      "path": "docs/VALIDATION_AND_LIMITATIONS.md",
+      "size_bytes": 2231,
+      "sha256": "f50892794c775ade9697eec865038d40179e3becc2263133a583bc4356448795"
+    },
+    {
+      "path": "evidence/screenshots/01_user_inventory.png",
+      "size_bytes": 97362,
+      "sha256": "7fb7eeb84f9dffa54d03f31640f30f307464d42a664d9cf14c86b08f675990ad"
+    },
+    {
+      "path": "evidence/screenshots/02_account_status.png",
+      "size_bytes": 145246,
+      "sha256": "94b50d1f12c2562211a5134f6400921b6799ecbc4f0767e3610683273941b316"
+    },
+    {
+      "path": "evidence/screenshots/03_role_assignment.png",
+      "size_bytes": 163777,
+      "sha256": "4590fcfb331323686fc6bc35dc2de2f2db41bc7e68cdc986c739caa4e4cbc038"
+    },
+    {
+      "path": "evidence/screenshots/04_sign_in_success.png",
+      "size_bytes": 153259,
+      "sha256": "89811552d111e60da4883f400befeb9e9cffd7bff3fc88e6906493ed8a771c88"
+    },
+    {
+      "path": "evidence/screenshots/05_no_licenses.png",
+      "size_bytes": 120718,
+      "sha256": "973d97e536138ab8d7761d6454eed77d3aba3bdd2d91f13c9b975b27ba872df6"
+    },
+    {
+      "path": "evidence/screenshots/06_graph_sdk_installed.png",
+      "size_bytes": 240477,
+      "sha256": "7c04981926f47fdc9940d57f6afca638514050ece18847f5d2a1f60a951c0099"
+    },
+    {
+      "path": "evidence/screenshots/07_graph_connection.png",
+      "size_bytes": 150941,
+      "sha256": "b3e15da1955c87b6bb54c0d6a5904048e7d07d0446dabdd795e14f110a64ee2e"
+    },
+    {
+      "path": "evidence/screenshots/08_context_empty.png",
+      "size_bytes": 255463,
+      "sha256": "691afad3ff13496e25d4c13739077939f742b2d6bcc3750974dfdf9a21a5ff00"
+    },
+    {
+      "path": "evidence/screenshots/09_context_error.png",
+      "size_bytes": 282914,
+      "sha256": "a56f9ccd9edcaafddb9f7a973e111fa7f2c0648a051c5a8fdd2373dd5c7c4726"
+    },
+    {
+      "path": "evidence/screenshots/10_graph_me_success.png",
+      "size_bytes": 256409,
+      "sha256": "cb655b8e2917adfe1b03386ea8e2a66429e80a6927dc702af3067b9feee7a910"
+    },
+    {
+      "path": "scripts/GraphDiagnostics.Core.psm1",
+      "size_bytes": 1431,
+      "sha256": "72c7d0d817c2f789ece9a037781def084dca0919ae5589728d514491f70effa7"
+    },
+    {
+      "path": "scripts/ReadOnly-M365IdentityDiagnostics.ps1",
+      "size_bytes": 1546,
+      "sha256": "4ce0e63d854618fb9d826d2e5118340fc804547d074d7c515b7cc246a6064c47"
+    },
+    {
+      "path": "scripts/Test-GraphConnectivity.ps1",
+      "size_bytes": 1325,
+      "sha256": "b19332616a217e7f3d1939f696ca5b3122cb87e3185d44e8d69c3f47a7291f56"
+    },
+    {
+      "path": "tests/GraphDiagnostics.Tests.ps1",
+      "size_bytes": 1394,
+      "sha256": "3c21d92d111efffcdb17e15b003411e3858a6d6d8179001d5ea32a8401a466d2"
+    },
+    {
+      "path": "tests/test_portfolio.py",
+      "size_bytes": 1692,
+      "sha256": "84e4dee0c7f3a69a867f8ac4482a77b58bd45ce2d4275a34283e08af623e8449"
+    }
+  ]
+}
