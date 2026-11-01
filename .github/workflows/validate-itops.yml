@@ -1,0 +1,108 @@
+name: Validate synthetic IT operations and safe script syntax
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  datasets:
+    name: Synthetic ticket reconciliation and offline console (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11','3.12']
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Setup Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Verify Python source syntax
+        run: python -m compileall -q tools tests
+      - name: Reconcile synthetic helpdesk tickets, user references and independent monthly KPIs
+        run: python -m tools.validate_itops --output reports/itops-source-validation.json
+      - name: Run regression and source-backed interactive UI tests
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Upload reproducible offline evidence
+        if: always()
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
+        with:
+          name: itops-python-${{ matrix.python-version }}
+          retention-days: 14
+          if-no-files-found: warn
+          path: |
+            reports/itops-source-validation.json
+            demo/it-operations-console.html
+
+  script-syntax:
+    name: Safe PowerShell and Bash syntax review (never execute admin scripts)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Syntax-check scoped Help Desk, IT Operations and Outlook PowerShell scripts
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $paths = @(
+            'enterprise-helpdesk-support-lab/scripts/powershell',
+            'enterprise-it-operations-lab/scripts/powershell',
+            'enterprise-microsoft-365-outlook-support-lab/scripts'
+          )
+          $files = @($paths | ForEach-Object { Get-ChildItem -LiteralPath $_ -Recurse -File -Include *.ps1,*.psm1 })
+          if ($files.Count -lt 25) { throw "Expected at least 25 PowerShell scripts; found $($files.Count)" }
+          $issues = @()
+          foreach ($file in $files) {
+            $tokens = $null
+            $parseErrors = $null
+            [void][System.Management.Automation.Language.Parser]::ParseFile($file.FullName,[ref]$tokens,[ref]$parseErrors)
+            foreach ($problem in $parseErrors) {
+              $issues += "$($file.FullName):$($problem.Extent.StartLineNumber): $($problem.Message)"
+            }
+          }
+          Write-Host "PowerShell syntax-parsed $($files.Count) files; failures=$($issues.Count)"
+          if ($issues.Count) { $issues | ForEach-Object { Write-Error $_ }; exit 1 }
+      - name: Check Bash script syntax only; do not invoke admin commands
+        run: |
+          set -euo pipefail
+          count=0
+          while IFS= read -r -d '' file; do
+            bash -n "$file"
+            count=$((count+1))
+          done < <(find enterprise-it-operations-lab/scripts enterprise-helpdesk-support-lab/scripts -type f -name '*.sh' -print0)
+          test "$count" -gt 0
+          echo "PASS: Bash syntax checked for $count scripts. No host administration performed."
+
+  secrets:
+    name: Full-history Gitleaks secret scan
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout full history
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Verify Gitleaks binary download
+        run: |
+          curl --fail --location --retry 3 --silent --show-error \
+            https://github.com/gitleaks/gitleaks/releases/download/v8.24.2/gitleaks_8.24.2_linux_x64.tar.gz \
+            -o /tmp/gitleaks.tar.gz
+          echo 'fa0500f6b7e41d28791ebc680f5dd9899cd42b58629218a5f041efa899151a8e  /tmp/gitleaks.tar.gz' | sha256sum --check
+          tar -xzf /tmp/gitleaks.tar.gz -C /tmp gitleaks
+          chmod +x /tmp/gitleaks
+      - name: Scan committed Git history
+        run: /tmp/gitleaks git --no-banner --redact .
