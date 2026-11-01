@@ -160,7 +160,7 @@ class InteractiveConsoleTests(unittest.TestCase):
         self.assertNotIn("innerHTML",self.page)
         self.assertNotIn("fetch(",self.page)
         self.assertFalse(p.external_js)
-        self.assertIn("no live ITSM",self.data["source"].lower())
+        self.assertIn("no live itsm",self.data["source"].lower())
 
     def test_ticket_data_is_not_falsely_joined_to_monthly_kpis(self):
         self.assertIn("must not be reconciled",self.page)
