@@ -37,6 +37,18 @@ python -m unittest discover -s tests -p 'test_*.py' -v
 
 This phase does **not** claim that all 2,451 repository files are tested, that nested legacy tests have been reconciled, that Pester integration or remote tenant validation was performed, or that the portfolio's separate real-tenant investigation was reproduced. The deliberately narrow script paths avoid inadvertently executing administrative actions on a hosted runner.
 
+## Hosted verification — November 1, 2026
+
+[GitHub Actions run #41361113353](https://github.com/JamieChristian22/enterprise-it-support-and-systems-operations/actions/runs/41361113353) passed all four jobs:
+
+- Python 3.11: **18/18 unit tests passed**; source consistency validated.
+- Python 3.12: **18/18 unit tests passed**; source consistency validated.
+- PowerShell: **40 scripts** parsed with zero syntax errors, including the corrected interpolated DNS error message in `enterprise-microsoft-365-outlook-support-lab/scripts/Test-M365Connectivity.ps1`.
+- Bash: **21 scripts** passed `bash -n`; nothing was executed against hosts.
+- Gitleaks: full reachable Git history scanned with zero reported findings.
+
+The synthetic Help Desk fixture contains 120 resolved sample cases referencing 250 synthetic users, with 120 of 120 `sla_result=Met` and a validated average resolution of **471.33 sample minutes**. This is a property of authored records only. The seven monthly operational records are a separate unrelated series.
+
 ## Publication and additional checks
 
 Before publication, review the HTML in desktop and mobile browsers, scan for accessibility issues, independently review scripts with elevated privileges or state-changing behavior, and create intentional mocked Pester tests for safe pure functions. Separately validate historical archive claims and any missing cross-file mappings. CI passing is evidence for these bounded automated checks only; it does not certify secure deployment, live system administration, or production service outcomes.
