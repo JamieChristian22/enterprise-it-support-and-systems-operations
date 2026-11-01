@@ -22,6 +22,18 @@
 
 ---
 
+## Interactive IT Service Operations Console
+
+[![IT operations validation](https://github.com/JamieChristian22/enterprise-it-support-and-systems-operations/actions/workflows/validate-itops.yml/badge.svg)](https://github.com/JamieChristian22/enterprise-it-support-and-systems-operations/actions/workflows/validate-itops.yml)
+
+**[Explore the interactive IT Operations Console](demo/it-operations-console.html)** · [Validation method, reproducibility and limitations](docs/ITOPS_VALIDATION.md)
+
+This fully offline console includes **120 synthetic Help Desk tickets**, source-backed resolution records and priority filters, plus an **independent** seven-month IT Operations KPI series. The dashboard allows investigation of ticket status, SLA labels and category trends without live authentication, ticket API calls or host changes. Download the HTML to open it interactively in a browser; the GitHub code viewer will not execute it.
+
+[GitHub Actions](.github/workflows/validate-itops.yml) tests strict CSV ingestion and referential integrity, reconciles each ticket's recorded resolution duration against its timestamps, enforces HTML/CSV source parity, syntax-parses a selected PowerShell/Bash script set **without executing administrative commands**, and scans Git history for credentials. Inspect the latest workflow run for the actual status. The **100% SLA-met sample** is an authored fixture characteristic, not verified production performance, and the independent monthly KPI dataset must **not** be reconciled to these tickets.
+
+---
+
 ## 🚀 Executive Summary
 
 Welcome to my **Enterprise IT Support, Systems Administration & Operations Portfolio**.
