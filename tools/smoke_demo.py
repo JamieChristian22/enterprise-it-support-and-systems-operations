@@ -28,9 +28,13 @@ def main():
         expect(page.locator("#bars .barcol").count() == 7, "Monthly trend chart missing")
         page.locator("#ticketList button.ticket").last.click()
         expect("INC-" in page.locator("#detailTitle").inner_text(), "Ticket details failed")
-        page.select_option("#priority", "P1")
+        page.select_option("#priority", "P2")
         filtered = page.locator("#ticketList button.ticket").count()
-        expect(0 < filtered < 120, "Priority filter did not limit tickets")
+        expect(filtered == 31, "P2 filter did not show the 31 source records")
+        page.select_option("#priority", "P1")
+        expect(page.get_by_text("No records match.").count() == 1,
+               "P1 empty-state handling failed (no P1 fixtures exist)")
+        page.select_option("#priority", "P2")
         page.fill("#search", "UNMATCHED-TEST-TICKET")
         expect(page.get_by_text("No records match.").count() == 1,
                "No-results state missing")
