@@ -50,6 +50,8 @@ def read_csv(path: Path, required: set[str]) -> list[dict[str, str]]:
 
 def metrics(tickets: list[dict[str, str]], users: list[dict[str, str]],
             months: list[dict[str, str]]) -> dict:
+    if not tickets or not users or not months:
+        raise ValueError("empty ticket, user, or monthly KPI series")
     user_ids = [r["user_id"] for r in users]
     if len(set(user_ids)) != len(user_ids):
         raise ValueError("Duplicate user IDs")
@@ -92,7 +94,9 @@ def metrics(tickets: list[dict[str, str]], users: list[dict[str, str]],
     for row in months:
         month = row["Month"]
         try:
-            datetime.strptime(month, "%Y-%m")
+            parsed_month = datetime.strptime(month, "%Y-%m")
+            if parsed_month.strftime("%Y-%m") != month:
+                raise ValueError(f"Invalid KPI month: {month}")
         except ValueError as exc:
             raise ValueError(f"Invalid KPI month: {month}") from exc
         if month in checked_months:
