@@ -29,6 +29,8 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Verify Python source syntax
         run: python -m compileall -q tools tests
+      - name: Parse offline dashboard JavaScript without executing it
+        run: python tools/check_inline_js.py demo/it-operations-console.html
       - name: Reconcile synthetic helpdesk tickets, user references and independent monthly KPIs
         run: python -m tools.validate_itops --output reports/itops-source-validation.json
       - name: Run regression and source-backed interactive UI tests
