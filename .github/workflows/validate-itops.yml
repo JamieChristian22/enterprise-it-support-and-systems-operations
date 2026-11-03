@@ -112,8 +112,9 @@ jobs:
           name: interactive-browser-smoke
           if-no-files-found: warn
           retention-days: 14
-          path: reports/*-desktop.png
-                reports/*-mobile.png
+          path: |
+            reports/*-desktop.png
+            reports/*-mobile.png
 
   secrets:
     name: Full-history Gitleaks secret scan
