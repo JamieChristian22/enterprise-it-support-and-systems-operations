@@ -147,3 +147,7 @@ This repository contains **six enterprise-focused technical projects** covering:
 **📜 License:** [MIT](./LICENSE)
 
 **⚠️ Disclaimer:** This is an independent technical training portfolio. Simulated enterprise records are not representations of actual corporate employment or production incidents.
+
+## Reviewer guide and asset provenance
+
+Use [REVIEWER_GUIDE.md](REVIEWER_GUIDE.md) to navigate tracked evidence and review sample dataset/media source and reuse rights. Listings are not proof of ownership or license clearance.
