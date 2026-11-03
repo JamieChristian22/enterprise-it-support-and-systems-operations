@@ -1,0 +1,26 @@
+# Python and local generated test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+.DS_Store
+reports/
+
+# Local secrets and temporary admin output
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.pem
+*.key
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+*.sqlite
+*.sqlite3
+# Do not suppress committed synthetic datasets or supporting portfolio evidence.

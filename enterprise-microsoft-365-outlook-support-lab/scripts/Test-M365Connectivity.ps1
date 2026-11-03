@@ -26,7 +26,7 @@ $results = foreach ($target in $targets) {
         $dnsResolved = $true
         $addresses = ($dns | Where-Object IPAddress | Select-Object -ExpandProperty IPAddress -Unique) -join ";"
     } catch {
-        Write-SupportLog -Message "DNS resolution failed for $target: $($_.Exception.Message)" -Level WARN -LogPath $log
+        Write-SupportLog -Message "DNS resolution failed for $($target): $($_.Exception.Message)" -Level WARN -LogPath $log
     }
 
     $tcp = Test-NetConnection -ComputerName $target -Port 443 -WarningAction SilentlyContinue
