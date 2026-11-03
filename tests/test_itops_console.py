@@ -33,6 +33,23 @@ class SourceValidationTests(unittest.TestCase):
         self.assertEqual(sum(report["priority_counts"].values()),120)
         self.assertIn("Do not reconcile",report["data_comparability"])
 
+    def test_empty_source_series_fails_closed(self):
+        cases = (
+            ("tickets", [], self.users, self.months),
+            ("users", self.tickets, [], self.months),
+            ("months", self.tickets, self.users, []),
+        )
+        for label, tickets, users, months in cases:
+            with self.subTest(source=label):
+                with self.assertRaisesRegex(ValueError, "empty"):
+                    metrics(tickets, users, months)
+
+    def test_noncanonical_month_fails(self):
+        rows = copy.deepcopy(self.months)
+        rows[0]["Month"] = "2026-1"
+        with self.assertRaisesRegex(ValueError, "Invalid KPI month"):
+            metrics(self.tickets, self.users, rows)
+
     def test_duplicate_ticket_id_fails(self):
         rows=copy.deepcopy(self.tickets)
         rows[1]["ticket_id"]=rows[0]["ticket_id"]
